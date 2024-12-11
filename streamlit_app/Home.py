@@ -1,10 +1,7 @@
 import streamlit as st
 
 def home():
-    col1, col2 = st.columns([3, 1])  # 3 partes de espacio para la izquierda, 1 para la derecha
-    with col2:
-        st.image("streamlit_app/logo.png", width=150)
-        st.title("Social Pulse: Análisis de Interacciones y Tendencias para Marcas en Redes Sociales")
+    st.title("Social Pulse: Análisis de Interacciones y Tendencias para Marcas en Redes Sociales")
 
     st.write(
         """
