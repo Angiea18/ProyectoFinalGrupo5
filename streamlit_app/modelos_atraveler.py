@@ -11,7 +11,7 @@ from xgboost import XGBRegressor
 
 # Cargar los datasets
 def load_data():
-    data = pd.read_csv('Datasets/data_atravelerteacher.csv')
+    data = pd.read_csv('streamlit_app/data_atravelerteacher.csv')
 
     # Codificación para el campo categórico 'type'
     encoder = OneHotEncoder()
