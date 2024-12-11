@@ -8,8 +8,8 @@ import plotly.graph_objects as go
 from wordcloud import WordCloud
 
 # Cargar los datos
-data = pd.read_csv('Datasets/posts_profekyle.csv')
-df_emotions = pd.read_csv("Datasets/df_emotions_caption_profekyle.csv", usecols=["id", "timestamp", "Sentiment_Score"])
+data = pd.read_csv('streamlit_app/posts_profekyle.csv')
+df_emotions = pd.read_csv("streamlit_app/df_emotions_caption_profekyle.csv", usecols=["id", "timestamp", "Sentiment_Score"])
 data = data.merge(df_emotions[["id", "Sentiment_Score"]], on="id", how="left")
 
 # Preprocesamiento
