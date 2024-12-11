@@ -9,8 +9,8 @@ from wordcloud import WordCloud
 
 # Verificar que los archivos existen
 try:
-    data = pd.read_csv('Datasets/posts_atravelerteacher.csv')
-    df_emotions = pd.read_csv("Datasets/df_emotions_caption_atravelerteacher.csv", usecols=["id", "timestamp", "Sentiment_Score"])
+    data = pd.read_csv('streamlit_app/posts_atravelerteacher.csv')
+    df_emotions = pd.read_csv("streamlit_app/df_emotions_caption_atravelerteacher.csv", usecols=["id", "timestamp", "Sentiment_Score"])
 except FileNotFoundError:
     st.error("No se encontraron los archivos CSV. Asegúrate de que las rutas sean correctas.")
     st.stop()
