@@ -14,7 +14,7 @@ def home():
     
     st.markdown("---")
 
-    #st.image("streamlit_app/redes.jpeg", use_container_width=True)
+    st.image("streamlit_app/redes.jpeg", use_container_width=True)
 
     st.markdown("---")
 
