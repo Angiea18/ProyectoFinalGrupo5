@@ -107,19 +107,19 @@ def load_modelos_atraveler():
             pred = models[model_type].predict(input_data)
             st.write(f"{model_type}: {pred[0]:,.0f} seguidores")
         
-    #     st.write("### Gráfico de Comparación de Predicciones")
-    #     fig, ax = plt.subplots()
-    #     ax.bar(["Árbol de Decisiones", "Random Forest", "XGBoost"], 
-    #            [models["Árbol de Decisiones"].predict(input_data)[0],
-    #             models["Random Forest"].predict(input_data)[0],
-    #             models["XGBoost"].predict(input_data)[0]], 
-    #            color=['red', 'blue', 'green'])
-    #     ax.set_ylabel('Predicción de Seguidores')
-    #     st.pyplot(fig)
+         st.write("### Gráfico de Comparación de Predicciones")
+         fig, ax = plt.subplots()
+         ax.bar(["Árbol de Decisiones", "Random Forest", "XGBoost"], 
+                [models["Árbol de Decisiones"].predict(input_data)[0],
+                 models["Random Forest"].predict(input_data)[0],
+                 models["XGBoost"].predict(input_data)[0]], 
+                color=['red', 'blue', 'green'])
+         ax.set_ylabel('Predicción de Seguidores')
+         st.pyplot(fig)
 
-    # Evaluación de los modelos
-    # st.write("### Evaluación de los Modelos (Error Promedio y R²)")
+    #Evaluación de los modelos
+     st.write("### Evaluación de los Modelos (Error Promedio y R²)")
 
-    # for model_type in ["Árbol de Decisiones", "Random Forest", "XGBoost"]:
-    #     mae, r2 = evaluate_models(y_test, predicciones[model_type])
-    #     st.write(f"{model_type} - MAE: {mae:.4f}, R²: {r2:.4f}")
+     for model_type in ["Árbol de Decisiones", "Random Forest", "XGBoost"]:
+         mae, r2 = evaluate_models(y_test, predicciones[model_type])
+         st.write(f"{model_type} - MAE: {mae:.4f}, R²: {r2:.4f}")
