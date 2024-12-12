@@ -1,0 +1,17 @@
+Grupo 5
+
+Título del proyecto:
+Social Pulse: Análisis de Interacciones y Tendencias para Marcas en Redes Sociales.
+
+
+
+Objetivo:
+
+Diseñar e implementar una herramienta digital interactiva que facilite la visualización y análisis de las interacciones y tendencias en el comportamiento de una marca en redes sociales, con énfasis en Instagram.
+
+Integrantes:
+- Andrea Ximena Castaño
+- Angie Arango Zapata
+- Esneider Álvarez Gómez
+- Sebastian Loaiza
+- Alvaro Lozano Rodriguez
