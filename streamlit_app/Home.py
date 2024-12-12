@@ -15,6 +15,20 @@ def home():
     st.markdown("---")
 
     st.image("streamlit_app/redes.jpeg", use_container_width=True)
+<<<<<<< HEAD
+=======
+
+    st.markdown("---")
+    
+    st.markdown(
+    "[Carpeta de archivos Google Drive Grupo 5](https://drive.google.com/drive/u/0/folders/1_UbfHd6ebG1pEbCCWzNR5vGxIldwqxHA)", 
+    unsafe_allow_html=True
+    )
+    st.markdown(
+    "[Github Grupo 5](https://github.com/Angiea18/ProyectoFinalGrupo5)", 
+    unsafe_allow_html=True
+    )
+>>>>>>> 199711451b4b692b4101f581ba56b6ebe7b44187
 
     st.markdown("---")
 
@@ -26,15 +40,6 @@ def home():
         st.markdown(f"- {integrante}")
     
     st.markdown("---")
-
-    st.markdown(
-    "[Carpeta de archivos Google Drive Grupo 5](https://drive.google.com/drive/u/0/folders/1_UbfHd6ebG1pEbCCWzNR5vGxIldwqxHA)", 
-    unsafe_allow_html=True
-    )
-    st.markdown(
-    "[Github Grupo 5](https://github.com/Angiea18/ProyectoFinalGrupo5)", 
-    unsafe_allow_html=True
-    )
 
 # Llama la función de la página principal dentro de tu estructura
 if __name__ == "__main__":
