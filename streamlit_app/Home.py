@@ -27,7 +27,7 @@ def home():
     unsafe_allow_html=True
     )
 
-     st.markdown("---")
+    st.markdown("---")
 
     st.markdown("**Integrantes Grupo 5**")
     integrantes = [
